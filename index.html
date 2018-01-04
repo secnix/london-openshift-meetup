@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en"><head itemscope="" itemtype="http://schema.org/Event"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- META DATA -->
+
+    <meta http-equiv="expires" content="3600">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="DevNation is a full stack development conference featuring the best in Open Source.">
+    <meta name="google-site-verification" content="7sdSWCnZ-Cys0t2nErzInprYniEEgUgA9cgTw0wWbP4">
+    <title>OpenShift Commons Gathering</title>
+
+
+    <link href="http://openshiftgathering.com/assets/openshiftgathering/images/openshift-favicon.png" rel="icon" type="image/png" />
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- SEO Metadata -->
+    <meta name="description" content="Where users, partners, customers, and contributors come together to collaborate and work together on OpenShift.">
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
+    <meta name="country" content="">
+    <meta name="Language" content="en">
+
+
+
+
+    <!-- TREBLE STYLESHEETS -->
+    <!-- <link rel="stylesheet/less" href="assets/style/bootstrap.less" media="all" /> -->
+    <link rel="stylesheet" href="http://openshiftgathering.com/assets/openshiftgathering/css/bootstrap-uncompressed.css" type="text/css">
+
+    <link href="http://openshiftgathering.com/assets/openshiftgathering/css/font-awesome.css" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link href="http://openshiftgathering.com/assets/openshiftgathering/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+
+    <!-- GOOGLE WEB FONTS -->
+    <link href="http://openshiftgathering.com/assets/openshiftgathering/css/css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" async="" src="http://openshiftgathering.com/assets/openshiftgathering/js/elqCfg.min.js"></script>
+
+    <script type="text/javascript" async="" src="http://openshiftgathering.com/assets/openshiftgathering/js/linkid.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+
+
+    <link rel="stylesheet" href="http://openshiftgathering.com/assets/openshiftgathering/css/devnation.css?4" type="text/css">
+
+    <style>
+        div#register .form-group {
+            margin-bottom: 25px;
+        }
+        div#register .form-group input,
+        div#register .form-group textarea {
+            padding: 20px;
+        }
+        div#register .form-group input.form-control {
+            height: auto;
+        }
+        div#register .form-group textarea.form-control {
+            height: 236px;
+        }
+        div#register .form-control:focus {
+            border-color: #da422f;
+            box-shadow: none;}
+
+        .overlay {
+
+           position:absolute;
+           width:100%;
+           height:450px; /* your iframe height */
+           top:450px;  /* your iframe height */
+           margin-top:-450px;  /* your iframe height */
+        }
+
+
+
+    </style>
+
+
+    <style>
+        /*--------------------------------------------------------------------*/
+        /* FONT IMPORTS
+        /*--------------------------------------------------------------------*/
+        /* Overpass Regular */
+        @font-face {
+            font-family: 'Overpass';
+            src: url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass_Regular-webfont.eot');
+            /* IE9 Compat Modes */
+            src: url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */
+            url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass_Regular-webfont.woff') format('woff'),
+                /* Modern Browsers */
+            url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass_Regular-webfont.ttf')  format('truetype'),
+                /* Safari, Android, iOS */
+            url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass_Regular-webfont.svg#ExcelsiorLTStd') format('svg');
+            /* Legacy iOS */
+        }
+
+        /* Overpass Light */
+        @font-face {
+            font-family: 'Overpass Light';
+            src: url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass-Light-webfont.eot');
+            /* IE9 Compat Modes */
+            src: url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass-Light-webfont.eot?#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */
+            url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass-Light-webfont.woff') format('woff'),
+                /* Modern Browsers */
+            url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass-Light-webfont.ttf')  format('truetype'),
+                /* Safari, Android, iOS */
+            url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass-Light-webfont.svg#ExcelsiorLTStd') format('svg');
+            /* Legacy iOS */
+        }
+
+        /* Overpass Bold */
+        @font-face {
+            font-family: 'Overpass Bold';
+            src: url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass_Bold-webfont.eot');
+            /* IE9 Compat Modes */
+            src: url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+                /* IE6-IE8 */
+            url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass_Bold-webfont.woff') format('woff'),
+                /* Modern Browsers */
+            url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass_Bold-webfont.ttf')  format('truetype'),
+                /* Safari, Android, iOS */
+            url('http://openshiftgathering.com/assets/openshiftgathering/fonts/Overpass_Bold-webfont.svg#ExcelsiorLTStd') format('svg');
+            /* Legacy iOS */
+        }
+    </style>
+
+    <style>
+        /*Mobile fixes*/
+        @media  screen and (max-width:800px) {
+            .btn-main2 {
+                width: 300px !important;
+            }
+
+            .text-1-mobile {
+                transform:none !important;
+            }
+
+            .section-1-mobile {
+                height:inherit !important;
+            }
+
+            .section-2-mobile {
+                border:none !important;
+            }
+
+            .text-2-mobile {
+                top:10px !important;
+            }
+
+            .text-3-mobile {
+                width:300px !important;
+            }
+
+            .table-1-mobile {
+                position:relative !important;
+                right: 40px !important;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- NAVIGATION -->
+<nav class="fixed-top devnation-nav" id="navigation" style="opacity: 1;">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12 center main-sticky-nav-row">
+                <!-- LOGO -->
+                <!--<a class="brand devnation-brand pull-left" href="http://www.devnation.org/" title="DevNation"><object title="DevNation" type="image/svg+xml" class="devnation-svg-logo" data="./index_files/devnation_icon_dkgray.svg"><img src="./index_files/devnation_icon_dkgray.png" class="logo-img-png" alt="DevNation"></object></a>-->
+                <!--<a class="brand devnation-brand pull-left" href="http://www.devnationfederal.org/" title="DevNationFederal"><object title="DevNation" type="image/svg+xml" class="devnation-svg-logo" data="../assets/openshiftgathering/images/devnation_icon_dkgray.svg"><img src="../assets/openshiftgathering/images/devnation_icon_dkgray.png" class="logo-img-png" alt="DevNation Federal"></object></a>-->
+                <!-- END LOGO -->
+
+                <!-- MOBILE MENU BUTTON -->
+                <div class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </div>
+                <!-- END MOBILE MENU BUTTON -->
+
+                <!-- MAIN MENU -->
+                <ul id="main-menu" class="nav-collapse collapse">
+                    <li><a href="index.html#overview" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">Event Overview</a></li>
+                    <!--<li><a href="#cfp" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">Propose a Talk</a></li>-->
+                    <li><a href="index.html#schedule" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">Schedule</a></li>
+                    <li><a href="https://www.eventbrite.com/e/openshift-commons-gathering-austin-tickets-34581924467?aff=#tickets" target="_blank" data-target=".nav-collapse">Register</a></li>
+                    <li><a href="index.html#venue" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">Venue</a></li>
+                    <li><a href="index.html#speakers" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">Speakers</a></li>
+
+                    <!--<li><a href="#contest" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">Win a free pass!</a></li>-->
+                    <!--<li><a href="#speakers" data-scroll data-toggle="collapse" data-target=".nav-collapse">About</a></li> -->
+
+                    <!--<li><a href="#2015wrapup" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">2015</a></li>-->
+                    <!--<li><a href="#forthecoders" data-scroll data-toggle="collapse" data-target=".nav-collapse">Why Attend</a></li>
+                    <li><a href="#speakers" data-scroll data-toggle="collapse" data-target=".nav-collapse">Speakers</a></li> -->
+                    <!--<li><a href="#" data-scroll data-toggle="collapse" data-target=".nav-collapse">Blogs</a></li>
+                    <li><a href="#" data-scroll data-toggle="collapse" data-target=".nav-collapse">Venue</a></li>-->
+                    <!--<li><a href="#sponsorship" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">Sponsorship</a></li>-->
+                    <!--<li><a href="#contact" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">Contact</a></li>-->
+                    <!--<li><a href="http://blog.devnation.org" target="devnation_blog">Blog</a></li>-->
+                </ul>
+                <!-- END MAIN MENU -->
+
+                <!-- SOCIAL ICONS -->
+                <div class="social-icons  pull-right">
+                    <a href="https://www.facebook.com/openshift" class="fa fa-facebook-square"></a>
+
+
+                    <a href="https://twitter.com/openshiftcommon" class="fa fa-twitter-square"></a>
+
+                    <!-- END SOCIAL ICONS -->
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- END NAVIGATION -->
+
+<!-- PAGE | WELCOME -->
+<!--<div class="pages white paralax" id="page-welcome">-->
+<div class="pages white paralax" id="welcome" style="background-position: 0% 0px;">
+    <!--<div class="overlay"></div>-->
+    <!-- Centralized content -->
+
+    <!--<div class="centralized main-welcome-centralized">-->
+    <div class="welcome-2016">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12 center welcome-span-div">
+
+                    <div class = "col-sm-6">
+                        <img class="logo_img" alt="OpenShift Logo"  src="http://openshiftgathering.com/assets/openshiftgathering/images/Logotype_RH_OpenShift_wLogo_RGB_White-1.svg">
+                    </div>
+                    <div class = "col-sm-6">
+                        <img class="os_logo_img" alt="OpenShift Logo"  src="http://openshiftgathering.com/assets/openshiftgathering/images/openshift-commons-gathering-logo.png">
+                    </div>
+
+
+                    <h1 class="welcome-h1">January 31<sup>th</sup>, 2018 | London, UK&nbsp;&nbsp;&nbsp;
+
+                    </h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="devnation-nav middle-nav" id="navigation" style="opacity: 1; display: block;">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12 center ">
+                <!-- LOGO -->
+                <!--<a class="brand devnation-brand pull-left" href="http://www.devnation.org/" title="DevNation"><object title="DevNation" type="image/svg+xml" class="devnation-svg-logo" data="./index_files/devnation_icon_dkgray.svg"><img src="./index_files/devnation_icon_dkgray.png" class="logo-img-png" alt="DevNation"></object></a>-->
+                <!--<a class="brand devnation-brand pull-left" href="http://www.devnationfederal.org/" title="DevNationFederal"><object title="DevNation" type="image/svg+xml" class="devnation-svg-logo" data="../assets/openshiftgathering/images/devnation_icon_dkgray.svg"><img src="../assets/openshiftgathering/images/devnation_icon_dkgray.png" class="logo-img-png" alt="DevNation Federal"></object></a>-->
+                <!-- END LOGO -->
+
+                <!-- MOBILE MENU BUTTON -->
+                <!--<div class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </div>-->
+                <!-- END MOBILE MENU BUTTON -->
+
+                <!-- MAIN MENU -->
+                <ul id="main-menu" class="nav-collapse collapse" class = "top-menu">
+                    <li><a href="index.html#overview" data-scroll=""  data-target=".nav-collapse">Event Overview</a></li>
+                    <!--<li><a href="#cfp" data-scroll=""  data-target=".nav-collapse">Propose a Talk</a></li>-->
+                    <li><a href="index.html#schedule" data-scroll="" data-target=".nav-collapse">Schedule</a></li>
+                    <li><a href="https://www.eventbrite.com/e/openshift-commons-gathering-london-tickets-41491110027#tickets"   data-target=".nav-collapse">Register</a></li>
+                    <li><a href="index.html#venue" data-scroll=""  data-target=".nav-collapse">Venue</a></li>
+                    <li><a href="index.html#speakers" data-scroll="" data-target=".nav-collapse">Speakers</a></li>
+
+                    <!--<li><a href="#contest" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">Win a free pass!</a></li>-->
+                    <!--<li><a href="#speakers" data-scroll data-toggle="collapse" data-target=".nav-collapse">About</a></li> -->
+
+                    <!--<li><a href="#2015wrapup" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">2015</a></li>-->
+                    <!--<li><a href="#forthecoders" data-scroll data-toggle="collapse" data-target=".nav-collapse">Why Attend</a></li>
+                    <li><a href="#speakers" data-scroll data-toggle="collapse" data-target=".nav-collapse">Speakers</a></li> -->
+                    <!--<li><a href="#" data-scroll data-toggle="collapse" data-target=".nav-collapse">Blogs</a></li>
+                    <li><a href="#" data-scroll data-toggle="collapse" data-target=".nav-collapse">Venue</a></li>-->
+                    <!--<li><a href="#sponsorship" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">Sponsorship</a></li>-->
+                    <!--<li><a href="#contact" data-scroll="" data-toggle="collapse" data-target=".nav-collapse">Contact</a></li>-->
+                    <!--<li><a href="http://blog.devnation.org" target="devnation_blog">Blog</a></li>-->
+                </ul>
+                <!-- END MAIN MENU -->
+
+                <!-- SOCIAL ICONS -->
+                <div class="social-icons  pull-right">
+                    <a href="https://www.facebook.com/openshift" class="fa fa-facebook-square"></a>
+
+
+                    <a href="https://twitter.com/openshiftcommon" class="fa fa-twitter-square"></a>
+
+                    <!-- END SOCIAL ICONS -->
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- END PAGE | Welcome -->
+
+<div class="pages white-theme-section" id="overview">
+<div class="container-fluid">
+<div class="row-fluid container">
+
+    <div class="btn-main2" style="border: 2px solid #DB212F; padding:10px; margin-left:auto; margin-right:auto; width:450px;"><a href="https://www.eventbrite.com/e/openshift-commons-gathering-london-tickets-41491110027#tickets" target="_blank" style="text-decoration: none;" class="btn-main2">
+        <p class="text-center" style="color: #DB212F; font-weight:500; margin:0;">PURCHASE TICKETS</p>
+    </a></div>
+    <br/>
+
+    <h2><strong>OpenShift Commons Gathering</strong></h2>
+    <br/>
+
+    <p class = "text-center">Where users, partners, customers, contributors and upstream project leads come together to collaborate and work together on OpenShift.</p>
+
+    <br/>
+    <a href = "http://openshiftgathering.com/openshiftgathering_sponsors_application" target = "_blank" style = "text-decoration: none;" class = "btn-main2"><div class = "btn-main2" style="border: 2px solid cornflowerblue; padding:10px; margin-left:auto; margin-right:auto; width:450px;">
+            <p class="text-center" style="color: cornflowerblue; font-weight:500; margin:0;">APPLY TO BE A SPONSOR</p>
+        </div></a>
+
+    <br/>
+    <div >
+
+
+    <div class="agenda-day-block">
+
+
+
+        <div class="row-fluid">
+            <div>
+                <div class = "col-lg-6 section-1-mobile" style = "padding:15px; border: 2px solid #DB212F; border-collapse:collapse; height:620px;">
+
+                    <br/>
+                    <div class = "text-1-mobile" style = "position:relative; top:50%; transform: translateY(-80%);">
+                        <p class = "text-justify" style = "font-size:18px; margin: 0 45px;">The OpenShift Commons Gathering brings together experts from all over the world to discuss container technologies, best practices for cloud native application developers and the open source software projects that underpin the OpenShift ecosystem.
+                            The London event will gather developers, devops professionals and sysadmins together to explore the next steps in making container technologies successful and secure.
+                        <br/><br/><br/>
+
+
+                        <a href = "https://www.eventbrite.com/e/openshift-commons-gathering-london-tickets-41491110027#tickets" target = "_blank" style = "text-decoration: none;" class = "btn-main2"><div class = "btn-main2" style="border: 2px solid #DB212F; padding:10px; margin-left:auto; margin-right:auto; width:450px;">
+                            <p class="text-center" style="color: #DB212F; font-weight:500; margin:0;">PURCHASE TICKETS</p>
+                        </div></a>
+
+
+                        <p class = "text-center text-2-mobile" style = "position:relative; top:100px; font-size:1.5em;"><a href = "https://docs.google.com/forms/d/e/1FAIpQLSfHDndcqfnU8y6X58e0GbfqHNxWPrX1qg2REH9tin-zqjJSkw/viewform" target = "_blank"><strong>Invite a friend >></strong></a></p>
+                    </div>
+
+
+                </div>
+                <div class = "col-lg-6 section-2-mobile" style = "border: 2px solid #DB212F; border-left:none; height:620px">
+                    <h3>WHERE</h3>
+                    <p style = "padding:15px; text-align:center;"><span style = "color: #DB212F; font-weight:500;">London, UK</span>
+                    <br/>
+                        <br/><a href = "https://qeiicentre.london/getting-here/" target = "_blank">QEII Centre</a></p>
+
+
+                    <hr style = "border-top:2px solid #DB212F;"/>
+                    <div class = "col-xs-6">
+                        <h3>WHEN</h3>
+                        <br/>
+
+                        <a href = "http://openshiftgathering.com/assets/openshiftgathering/os-gathering-2017-austin.ics" target = "_blank"><img src = "http://london-openshift-gathering-2018.s3-website.eu-west-2.amazonaws.com/jan_31.png" style = "width:120px; margin-left:auto; margin-right:auto; display:block;"/></a>
+                        <br/><Br/><br/><br/>
+
+
+                    </div>
+                    <div class = "col-xs-6" style = "/*border-left: 2px solid #DB212F;*/">
+                        <h3>COST</h3>
+                        <br/>
+                        <p style = "padding:15px; text-align:center; color: #DB212F; font-weight:500;">
+                        Early Bird Price: £75 <span style="font-size:11px">(ex. VAT)</span>
+                        <br/>Full Price: £99 <span style="font-size:11px">(ex. VAT)</span>
+                        <br/><br/><br/><br/><br/>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid">
+
+            <div class="col-lg-12">
+                <!--<hr style = "border-top:2px solid #DB212F; clear:both;"/>-->
+
+                <br><br>
+
+            </div>
+        </div>
+
+        <!--<div class = "row-fluid">
+
+            <div class = "col-lg-12">
+
+            <br/>
+                <h3 class = "text-center" >Schedule</h3>
+                <p class = "text-center">The day will have a mix of keynotes, panels, ted-style talks, SIG break-out sessions, plenty of time to network over local craft beers and be continuously fuelled by local baristas.</p>
+            </div>
+        </div>
+
+        <div class = "row-fluid">
+
+            <div class = "col-lg-12">
+            <hr style = "border-top:2px solid #DB212F; clear:both;"/>
+            <br/>
+                <h3 class = "text-center" >Propose a Talk</h3>
+                <p class = "text-center">Have something to say about distributed systems, Linux containers and open source software as it relates
+                the CoreOS mission and projects? We'd love to hear from you. Get in touch today!</p>
+                <br/>
+                <a href = "#cfp" data-scroll="" style = "text-decoration: none;"><div style="border: 2px solid #DB212F; padding:10px; margin-left:auto; margin-right:auto; width:450px;">
+                    <p class="text-center" style="color: #DB212F; font-weight:500; margin:0;">PROPOSE A TALK</p>
+                </div></a>
+            </div>
+        </div>-->
+
+        <div class = "row-fluid">
+
+            <div class = "col-lg-12">
+            <!--<hr style = "border-top:2px solid #DB212F; clear:both;"/>-->
+
+            <br/><br/>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+        </div>
+
+
+
+
+</div>
+</div><!-- /.container-fluid -->
+</div><!-- /.pages -->
+
+
+<div class="pages grey-theme-section" id="cfp">
+    <div class="container-fluid">
+        <div class="row-fluid container">
+            <h3>Sponsors</h3>
+
+            <br/>
+            <p class = "text-center">Interested in sponsoring OpenShift Commons Gathering? <a href = "http://openshiftgathering.com/openshiftgathering_sponsors_application" target = "_blank">Apply here.</a></p>
+            <br/>
+
+            <!--
+
+            <div class="panel panel-default sponsor col-lg-3 col-lg-offset-2" >
+
+
+            <div class="panel-body">
+                        <a href = "https://" target = "_blank">
+                            <img class = "img-responsive" src = "http://" style = "padding:15px 0; margin-left:auto; margin-right:auto; width:100%;"/>
+                        </a>
+                </div>
+            </div>
+
+            <div class="panel panel-default sponsor col-lg-3 col-lg-offset-1" >
+
+                <div class="panel-body">
+                        <a href = "https://" target = "_blank">
+                            <img class = "img-responsive" src = "http://" style = "padding:0px; margin-left:auto; margin-right:auto; width:100%;"/>
+                        </a>
+                </div>
+            </div>
+          -->
+
+
+
+
+        </div>
+    </div><!-- /.container-fluid -->
+</div><!-- /.pages -->
+
+
+
+
+
+<style>
+    table {
+        border: 2px solid #DB212F !important; border-collapse:collapse !important;
+    }
+    td {
+        border: 2px solid #DB212F !important; border-collapse:collapse !important;
+        font-weight:400 !important;
+    }
+    .light-text {
+        font-weight:300;
+    }
+</style>
+<div class="pages white-theme-section" id="schedule">
+    <div class="container-fluid">
+        <div class="row-fluid container">
+            <h3>Schedule</h3>
+            <br/>
+
+            <p class = "text-center">The day will have a mix of keynotes, panels, ted-style talks, SIG break-out sessions, plenty of time to network over local craft beers and be continuously fuelled by local baristas.</p>
+            <br/>
+            <p><strong>Click on a session title to view the video recording.</strong></p>
+            <br/>
+
+
+            <div class = "at-a-glance-outer-div span12">
+
+
+                <div class="agenda-day-block">
+
+
+
+                    <div class="row-fluid">
+                        <table class = "table table-bordered" style = "font-size:20px;">
+                            <tbody>
+                            <tr>
+                                <td style = "width:15%;">8:00 a.m.</td>
+                                <td>Registration Opens - Breakfast</td>
+
+                            </tr>
+                            <tr>
+                                <td >9:00 a.m.</td>
+                                <td><a href = "https://www.youtube.com/watch?v=v3oLPEej5Oc" target = "_blank">Welcome to the Commons: Making Collaboration that Works</a> - <a href = "index.html#popover6" data-scroll>Diane Mueller</a>, Red Hat</td>
+
+                            </tr>
+                            <tr>
+                                <td>9:10 a.m.</td>
+                                <td><a href = "index.html#" target = "_blank">Keynote: Challenges of Digital Transformation</a> - <a href = "index.html#popover9" data-scroll></a>Deutsche Bank</td>
+
+                            </tr>
+                            <tr>
+                                <td >9:45 a.m.</td>
+                                <td><a href = "index.html#" target = "_blank">Keynote: The State of the Container Ecosystem</a> – <a href = "index.html#popover5" data-scroll>Dan Walsh</a>, Red Hat</td>
+
+                            </tr>
+                            <tr>
+                                <td >10:15 a.m.</td>
+                                <td><a href = "index.html#" target = "_blank">OpenShift Case Study</a></td>
+
+                            </tr>
+                            <tr>
+                                <td >11:00 a.m.</td>
+                                <td><a href = "index.html#" target = "_blank">OpenShift Case Study</a></td>
+
+                            </tr>
+                            <tr>
+                                <td >11:30 a.m.</td>
+                                <td><a href = "index.html#" target = "_blank">Panel: OpenShift in .Gov</a></td>
+
+                            </tr>
+                            <tr>
+                                <td >12:15 p.m.</td>
+                                <td>Lunch in Exhibition Hall</td>
+
+                            </tr>
+                            <tr>
+                                <td>1:30 p.m.</td>
+                                <td><a href = "index.html#" target = "_blank">OpenShift 3.x: Features/Functions/Future</a> - <a href = "index.html#" data-scroll>Diogenes Rettori</a>, Red Hat OpenShift Product Manager</td>
+
+                            </tr>
+                            <tr>
+                                <td>2:00 p.m.</td>
+                                <td><a href = "index.html#" target = "_blank">Service Catalog, Service Mesh, Istio Explained</a> - <a href = "index.html#" data-scroll>Paul Morie</a> Red Hat</td>
+
+
+                            </tr>
+                            <tr>
+                                <td>2:30 p.m.</td>
+                                <td>Break</td>
+
+                            </tr>
+                            <tr>
+                                <td>2:45 p.m.</td>
+                                <td><a href = "index.html#" target = "_blank">Panel: OpenShift in Financial Services</a><a href = "index.html#popover7" data-scroll></a></td>
+
+                            </tr>
+                            <tr>
+                                <td>3:15 p.m.</td>
+                                <td><a href = "index.html#" target = "_blank">OpenShift Case Study</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>3:45 p.m.</td>
+                                <td><a href = "index.html#" target = "_blank">OpenShift Case Study</a><a href = "index.html#" data-scroll></a><a href = "index.html#" data-scroll></a></td>
+
+                            </tr>
+                            <tr>
+                                <td>4:15 p.m.</td>
+                                <td><a href = "https://www.youtube.com/watch?v=cvGslmRrJtA&index=13&list=PLaR6Rq6Z4Iqe9xnafdhWdSgD-3qsWTm6K" target = "_blank">Panel: What's Next? Machine Learning on OpenShift</a></td>
+
+                            </tr>
+
+                            <tr>
+                                <td>5:00 p.m.</td>
+                                <td><a href = "https://www.youtube.com/watch?v=-LnzqyWmPV8&index=2&list=PLaR6Rq6Z4Iqe9xnafdhWdSgD-3qsWTm6K" target = "_blank">Wrap Up: The Road Ahead @ OpenShift</a> - <a href = "index.html#popover2" data-scroll>Brian Gracely</a>, Red Hat</td>
+
+                            </tr>
+                            <tr>
+                                <td>5:20 p.m.</td>
+                                <td>Closing - <a href = "index.html#popover6" data-scroll>Diane Mueller</a>, Red Hat</td>
+
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+
+
+                </div>
+
+                <br/>
+
+
+                <div class="btn-main2" style="border: 2px solid #DB212F; padding:10px; margin-left:auto; margin-right:auto; width:450px;"><a href="https://www.eventbrite.com/e/openshift-commons-gathering-london-tickets-41491110027#tickets" target="_blank" style="text-decoration: none;" class="btn-main2">
+                        <p class="text-center" style="color: #DB212F; font-weight:500; margin:0;">PURCHASE TICKETS</p>
+                    </a></div>
+
+
+
+            </div>
+
+            <p>&nbsp;</p>
+            <p class = "text-center"><a href = "http://openshiftgathering.com/openshiftgathering/austin" target = "_blank">View the 2017 schedule from the Austin event &raquo;</a></p>
+            <p class = "text-center"><a href = "http://openshiftgathering.com/openshiftgathering/boston" target = "_blank">View the 2017 schedule from the Boston event &raquo;</a></p>
+            <p class = "text-center"><a href = "http://openshiftgathering.com/openshiftgathering/berlin" target = "_blank">View the 2017 schedule from the Berlin event &raquo;</a></p>
+            <p class = "text-center"><a href = "http://openshiftgathering.com/openshiftgathering/2016/seattle" target = "_blank">View the 2016 schedule from the Seattle event &raquo;</a></p>
+
+
+
+
+        </div>
+    </div><!-- /.container-fluid -->
+</div><!-- /.pages -->
+<div class="pages grey-theme-section" id="speakers">
+<div class="container-fluid">
+<div class="row-fluid container">
+    <h3>Speakers</h3>
+    <br/>
+    <div class = "row-fluid inner">
+
+
+
+
+                <!--
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover2"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Serena Doyle</h3><p class = "text-center">UX Design and Strategy<br/>Red Hat<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Serena_Doyle.jpg" alt="Serena Doyle" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>-->
+
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover1"  style = "text-decoration:none;" href="index.html#" data-content="Architect, engineer, and strategic visionary for application platforms in the cloud at Red Hat. Core contributor to OpenShift and Kubernetes, the open source platform as a service and the containerized cluster manager. Clayton has helped set the direction for the evolution of cloud native applications and the platforms that enable them." rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Clayton Coleman</h3><p class = "text-center">Lead Architect, Containerized Application Infrastructure<br/>Red Hat</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Clayton_Coleman.jpg" alt="Clayton Coleman" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover2"  style = "text-decoration:none;" href="index.html#" data-content="Director Openshift Strategy, Red Hat. Brian recently joined Red Hat to focus on helping businesses evolve their cloud-native application portfolios. Prior to Red Hat, he held a number of leadership roles at Cisco, Virtustream, EMC and Wikibon. He co-hosts The Cloudcast podcast, and holds a BS/MBA from Wake Forest University. " rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Brian Gracely</h3><p class = "text-center">Director Openshift Strategy<br/>Red Hat<br/>&nbsp;</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://london-openshift-gathering-2018.s3-website.eu-west-2.amazonaws.com/380014-1119344432.png" alt="Brian Gracely" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover6"  style = "text-decoration:none;" href="index.html#" data-content="MC for the OpenShift Gathering, and Moderator of the Community Leadership Panel" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Diane Mueller</h3><p class = "text-center">Director, Community Development, Red Hat<br/>&nbsp;</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Diane_Mueller.jpg" alt="Diane Mueller" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover7"  style = "text-decoration:none;" href="index.html#" data-content="Distributed systems, infrastructure as code cloud specialist" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Justin Cook</h3><p class = "text-center">Consulting Engineer<br/>Secnix Systems<br><br></p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://london-openshift-gathering-2018.s3-website.eu-west-2.amazonaws.com/justin_cook.jpg" alt="Justin Cook" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover5"  style = "text-decoration:none;" href="index.html#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Daniel Walsh</h3><p class = "text-center">Consulting Engineer<br/>RHEL Container Team Lead<br/>Red Hat</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Daniel_Walsh.jpg" alt="Daniel Walsh" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+
+                    <!--
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover8"  style = "text-decoration:none;" href="#" data-content="Aparna Sinha leads the product management team at Google for Kubernetes, where she is responsible for all aspects of the product strategy and roadmap. She previously worked on the Android product team. Before Google Aparna was Director of Product Management at NetApp. She holds a PhD in Electrical Engineering from Stanford. " rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Aparna Sinha</h3><p class = "text-center">Senior Product Manager for Kubernetes and Google Container Engine</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Aparna_Sinha.jpg" alt="Aparna Sinha" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover9"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Christopher Wright</h3><p class = "text-center">Vice President, Software Engineering<br/>Red Hat</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Christopher_Wright.jpg" alt="Christopher Wright" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover11"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Stormy Peters</h3><p class = "text-center">Senior Manager, Open Source and Standards Team<br/>Red Hat</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Stormy_Peters.jpg" alt="Stormy Peters" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover10"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Paul Morie</h3><p class = "text-center">Principal Software Engineer, Red Hat - Co-chair, Kubernetes Service Catalog SIG</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Paul_Morie.jpg" alt="Paul Morie" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover12"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Ashesh Badani</h3><p class = "text-center">General Manager<br/>Cloud Business Unit<br/>Red Hat</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Ashesh_Badani.jpg" alt="Ashesh Badani" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover13"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Kris Nova</h3><p class = "text-center">Senior Developer Advocate<br/>Microsoft<br/>&nbsp;</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/kris_nova.jpg" alt="Kris Nova" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover14"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Hyde Sugiyama</h3><p class = "text-center">Senior Principal Technologist<br/>Red Hat<br/>&nbsp;</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Hyde_Sugiyama.jpg?2" alt="Hyde Sugiyama" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover17"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Evong Nham Chung</h3><p class = "text-center">Senior Manager, Emerging Technology Solutions Architecture Practice<br/>US Public Sector, Red Hat</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Evong_Chung.jpg" alt="Evong Nham Chung" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover15"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Seishio Yasukawa</h3><p class = "text-center">Group Leader of 202X Network Architecture Group<br/>NTT Network Technology Laboratories</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Seishio_Yasukawa.jpg" alt="Seishio Yasukawa" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover16"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Dan Barker</h3><p class = "text-center">Manager/Architect, Cloud Platforms<br/>DST Systems<br/>&nbsp;</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Dan_Barker.jpg" alt="Dan Barker" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover18"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Michelle Noorali</h3><p class = "text-center">Sr. Software Engineer<br/>Microsoft Azure Containers team<br/>&nbsp;</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/MichelleNoorali.jpg" alt="Michelle Noorali" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover2"  style = "text-decoration:none;" href="#" data-content="Kelsey Hightower has worn every hat possible throughout his career in tech, and enjoys leadership roles focused on making things happen and shipping software. Kelsey is a strong open source advocate focused on building simple tools that make people smile." rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Kelsey Hightower</h3><p class = "text-center">Staff Developer Advocate<br/>Google Cloud Platform<br/>Google</p></a>
+                        </div>
+                        <div class="panel-image"><img src="../../assets/openshiftgathering/images/speakers/Kelsey_Hightower.jpg" alt="Kelsey Hightower" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover3"  stylae = "text-decoration:none;" href="#" data-content="Brendan Burns is an architect at Microsoft Azure and co-founder of the open source Kubernetes project.  Prior to Microsoft he worked at Google on the cloud platform and websearch infrastructure, prior to Google he was a professor at Union College.  He received a PhD in Computer Science  from the University of Massachusetts Amherst and a BA in Computer Science and Studio Art from Williams College." rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Brendan Burns</h3><p class = "text-center">Co-founder of Kubernetes<br/>Microsoft Azure<br/>&nbsp;</p></a>
+                        </div>
+                        <div class="panel-image"><img src="../../assets/openshiftgathering/images/speakers/Brendan_Burns.jpeg" alt="Matthew Hicks" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover4"  style = "text-decoration:none;" href="#" data-content="Brandon Philips is helping to build modern Linux server infrastructure at CoreOS as CTO. Prior to CoreOS, he worked at Rackspace hacking on cloud monitoring and was a Linux kernel developer at SUSE. As a graduate of Oregon State's Open Source Lab he is passionate about open source technologies." rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Brandon Philips</h3><p class = "text-center">Chief Technology Officer<br/>CoreOS<br/>&nbsp;</p></a>
+                        </div>
+                        <div class="panel-image"><img src="../../assets/openshiftgathering/images/speakers/Brandon_Philips.jpg" alt="Brandon Philips" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>-->
+
+                    <!--<div class="col-lg-4 col-sm-6 speaker">
+
+                        <div class="panel-heading">
+                            <a id="popover7"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Ashesh Badani</h3><p class = "text-center">General Manager<br/>Cloud Business Unit<br/>Red Hat</p></a>
+                        </div>
+                        <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Ashesh_Badani.jpg" alt="Ashesh Badani" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                    </div>-->
+
+                    <!--
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover4"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Christoph Eberle</h3><p class = "text-center">Senior Solutions Architect<br/>Red Hat<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Christoph_Eberle.jpg" alt="Christoph Eberle" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover5"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Daniel Walsh</h3><p class = "text-center">Consulting Engineer<br/>RHEL Container Team Lead<br/>Red Hat</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Daniel_Walsh.jpg" alt="Daniel Walsh" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover7"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Daniel Foley</h3><p class = "text-center">Systems Engineer<br/>Agio<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Daniel_Foley.jpg" alt="Daniel Foley" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover8"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Joe Fernandes</h3><p class = "text-center">Senior Director of Product Management<br/>Red Hat OpenShift &amp; Atomic</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Joe_Fernandes.jpg" alt="Joe Fernandes" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover10"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Steve Speicher</h3><p class = "text-center">Product Manager, OpenShift<br/>Red Hat<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Steve_Speicher.jpg" alt="Steve Speicher" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover11"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Veerendra Akula</h3><p class = "text-center">Sr. Java Developer<br/>Atpco<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Veerendra_Akula.jpg" alt="Veerendra Akula" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover12"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Diógenes Rettori</h3><p class = "text-center">Principal Product Manager<br/>Red Hat<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Diogenes_Rettori.jpg" alt="Diógenes Rettori" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover13"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Paul Morie</h3><p class = "text-center">Principal Software Engineer, Red Hat - Co-chair, Kubernetes Service Catalog SIG</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Paul_Morie.jpg" alt="Paul Morie" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover14"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Anandhi Navaneethakr</h3><p class = "text-center">Solutions Architect<br/>Atpco</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Anandhi_Navaneethakr.jpg" alt="Anandhi Navaneethakr" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover15"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Mukul Nadkarni</h3><p class = "text-center">Sr. Java Developer<br/>Atpco<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Mukul_Nadkarni.jpg" alt="Mukul Nadkarni" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover16"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">William Shaw</h3><p class = "text-center">Director, Systems Engineering, Point 72 Asset Management<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/William_Shaw.jpg" alt="William Shaw" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover17"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Marc Curry</h3><p class = "text-center">Product Manager, Container Infrastructure<br/>Red Hat</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Marc_Curry.jpg" alt="Marc Curry" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover18"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Michael Barrett</h3><p class = "text-center">Product Manager, OpenShift<br/>Red Hat<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Michael_Barrett.jpg" alt="Michael Barrett" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover19"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Michael Duarte</h3><p class = "text-center">Senior IT Design Engineer<br/>Cisco Systems<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Michael_Duarte.jpg" alt="Michael Duarte" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover20"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Michael White</h3><p class = "text-center">IT Architect<br/>Cisco Systems<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Michael_White.jpg" alt="Michael White" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover21"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Ben Breard</h3><p class = "text-center">Senior Technology Product Manager - Linux Containers<br/>Red Hat</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Ben_Breard.jpg" alt="Ben Breard" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+        <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover22"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Wayne Raila</h3><p class = "text-center">Software Engineer<br/>Massachusetts General Hospital<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Wayne_Raila.jpg" alt="Wayne Raila" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover23"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Kevin Crocker</h3><p class = "text-center">Manager, Integration and Interoperability<br/>Inmarsat</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Kevin_Crocker.jpg" alt="Kevin Crocker" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover24"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Jose Chavez</h3><p class = "text-center">Principal Software Engineer<br/>CA<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Jose_Chavez.jpg" alt="Jose Chavez" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+        <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover25"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Jeff Richards</h3><p class = "text-center">Principal Software Engineer<br/>CA<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Jeff_Richards.jpg" alt="Jeff Richards" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+        <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover26"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Baltisar Oswald</h3><p class = "text-center">Baltisar Oswald Software Architect<br/>SBB</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Oswald_Baltisar.jpg" alt="Baltisar Oswald" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+        <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover27"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Rajay Rai</h3><p class = "text-center">Head of Digital Ninja<br/>MacQuarie Bank<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Rajay_Rai.jpg" alt="Rajay Rai" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+        <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover28"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Wayne Dovey</h3><p class = "text-center">Senior Platform Consultant <br/>Red Hat<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Wayne_Dovey.jpg" alt="Wayne Dovey" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>
+
+        <div class="col-lg-4 col-sm-6 speaker">
+
+                    <div class="panel-heading">
+                        <a id="popover29"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true" ><h3 class = "text-center">Guilhem Vianes</h3><p class = "text-center">Guilhem Vianes <br/>La Poste<br/>&nbsp;</p></a>
+                    </div>
+                    <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Guilhem_Vianes.jpg" alt="Guilhem Vianes" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+                </div>-->
+
+
+            <!--<div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover20"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Alexis Richardson</h3><p class = "text-center">Founder &amp; CEO, Weaveworks<br/>Chair, CNCF Technical Oversight Committee</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Alexis_Richardson.jpg" alt="Alexis Richardson" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover21"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Robert Forsstrom</h3><p class = "text-center">Middleware Engineer<br/>Volvo<br/>&nbsp;</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Robert_Forsstrom.jpg" alt="Robert Forsstrom" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover22"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Vitor Pacheco</h3><p class = "text-center">Head, New Services<br/>Amadeus IT Group<br/>&nbsp;</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Vitor_Pacheo.jpg" alt="Vitor Pacheco" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover23"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Stormy Peters</h3><p class = "text-center">Senior Manager, Open Source and Standards Team<br/>Red Hat</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Stormy_Peters.jpg" alt="Stormy Peters" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+             <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover28"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Thomas Weber</h3><p class = "text-center">VP AppAgile (PaaS and Big Data)<br/>T-Systems International GmbH<br/>&nbsp;</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Thomas_Weber.jpg" alt="Thomas Weber" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover29"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Eric Mountain</h3><p class = "text-center">Senior Distributed Systems Expert<br/>Amadeus<br/>&nbsp;</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Eric-Mountain.jpg" alt="Eric Mountain" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover24"  style = "text-decoration:none;" href="#" data-content="Aparna Sinha leads the product management team at Google for Kubernetes, where she is responsible for all aspects of the product strategy and roadmap. She previously worked on the Android product team. Before Google Aparna was Director of Product Management at NetApp. She holds a PhD in Electrical Engineering from Stanford. " rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Aparna Sinha</h3><p class = "text-center">Senior Product Manager for Kubernetes and Google Container Engine</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Aparna_Sinha.jpg" alt="Aparna Sinha" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover26"  style = "text-decoration:none;" href="#" data-content="Open Container Initiative Technical Oversight Board member" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Vincent Batts</h3><p class = "text-center">Principal Software Engineer<br/>Red Hat<br/>&nbsp;</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Vincent_Batts.jpg" alt="Vincent Batts" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover27"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover" data-html="true"><h3 class = "text-center">Josh Meyer</h3><p class = "text-center">Global Financial Services Cloud Enablement Lead<br/>Accenture</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Josh_Meyer.jpg" alt="Josh Meyer" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover3"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Dr. André Baumgart</h3><p class = "text-center"> Co-Founder<br/>easiER AG<br/>&nbsp;</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Andre_Baumgart.jpg" alt="Dr. André Baumgart" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover25"  style = "text-decoration:none;" href="#" data-content="Andy Randall is the CEO at Tigera, the company behind Project Calico. Before co-founding Tigera, Andy was general manager of the Metaswitch Networks networking business unit that originally incubated Project Calico. He has held executive positions spanning marketing, business & corporate development, and engineering. He holds masters degrees in business, software engineering, mathematics and philosophy from Columbia, UC Berkeley, Stirling and Oxford universities." rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Andrew Randall</h3><p class = "text-center">CEO<br/>Tigera<br/>&nbsp;</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/andrew-randall.jpg" alt="Andrew Randall" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover1"  style = "text-decoration:none;" href="#" data-content="" rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Christopher Wright</h3><p class = "text-center">Vice President, Software Engineering<br/>Red Hat</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Christopher_Wright.jpg" alt="Christopher Wright" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover5"  style = "text-decoration:none;" href="#" data-content="Architect, engineer, and strategic visionary for application platforms in the cloud at Red Hat. Core contributor to OpenShift and Kubernetes, the open source platform as a service and the containerized cluster manager. Clayton has helped set the direction for the evolution of cloud native applications and the platforms that enable them." rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Clayton Coleman</h3><p class = "text-center">Lead Architect, Containerized Application Infrastructure<br/>Red Hat</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Clayton_Coleman.jpg" alt="Craig Mcluckie" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover6"  style = "text-decoration:none;" href="#" data-content="Director Openshift Strategy, Red Hat. Brian recently joined Red Hat to focus on helping businesses evolve their cloud-native application portfolios. Prior to Red Hat, he held a number of leadership roles at Cisco, Virtustream, EMC and Wikibon. He co-hosts The Cloudcast podcast, and holds a BS/MBA from Wake Forest University. " rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Brian Gracely</h3><p class = "text-center">Director Openshift Strategy<br/>Red Hat<br/>&nbsp;</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Brian_Gracely.jpg" alt="Brian Gracely" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-sm-6 speaker">
+
+                <div class="panel-heading">
+                    <a id="popover8"  style = "text-decoration:none;" href="#" data-content="Brandon Philips is helping to build modern Linux server infrastructure at CoreOS as CTO. Prior to CoreOS, he worked at Rackspace hacking on cloud monitoring and was a Linux kernel developer at SUSE. As a graduate of Oregon State's Open Source Lab he is passionate about open source technologies." rel="popover" data-placement="bottom"  data-trigger="hover"><h3 class = "text-center">Brandon Philips</h3><p class = "text-center">Chief Technology Officer<br/>CoreOS<br/>&nbsp;</p></a>
+                </div>
+                <div class="panel-image"><img src="http://openshiftgathering.com/assets/openshiftgathering/images/speakers/Brandon_Philips.jpg" alt="Brandon Philips" class="img-circle modal_target5" style = "margin-left:auto; margin-right:auto; display:block; width:200px;"></div>
+            </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+</div>
+</div><!-- /.container-fluid -->
+</div><!-- /.pages -->
+<div class="pages white-theme-section" id="venue">
+<div class="container-fluid">
+<div class="row-fluid container">
+    <h3>Venue</h3>
+
+    <p class = "text-center">January, 31, 2018 | 8:30 a.m. - 5:30 p.m.
+    <br/><a href = "https://qeiicentre.london/getting-here/" target = "_blank">QEII Centre</a>
+    <br/>Broad Sanctuary
+        <br/>Westminster, London, SW1P 3EE
+    <br/><br/><br/></p>
+
+
+
+    <div style = "position:relative;">
+        <!--<div class="overlay" onClick="style.pointerEvents='none'"></div>-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.7081991830178!2d-0.13121598423030167!3d51.50022207963396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604c4cb112d93%3A0x39efdcc690b64ca3!2sQEII+Centre!5e0!3m2!1sen!2suk!4v1513891405406" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+
+
+
+
+
+</div>
+</div><!-- /.container-fluid -->
+</div><!-- /.pages -->
+
+<!--
+<div class="pages white-theme-section" id="videos">
+    <div class="container-fluid">
+        <div class="row-fluid container">
+
+
+
+            <h2><strong>View the Videos:</strong></h2>
+            <br/>
+
+            <h3>Part 1 (9 a.m. - 12:30 p.m.):</h3>
+
+            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fopenshift%2Fvideos%2F1873421906033872%2F&show_text=0&width=560" width="560" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+
+
+            <h3>Part 2 (1:30 p.m. - 2:30 p.m.):</h3>
+            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fopenshift%2Fvideos%2F1873425329366863%2F&show_text=0&width=560" width="560" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+            <h3>Part 3 (2:45 p.m. - 6:15 p.m.):</h3>
+            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fopenshift%2Fvideos%2F1873428272699902%2F&show_text=0&width=560" width="560" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+</div>--><!-- /.container-fluid -->
+</div><!-- /.pages -->
+
+
+
+<div class="pages grey-theme-section" id="footer" style = "background-color: #1b2a38">
+<div class="container-fluid">
+<div class="row-fluid container">
+
+
+    <div class="container">
+        <div class="row">
+          <!-- Social Section -->
+          <div class="col-md-4 col-sm-12">
+            <a href="https://www.redhat.com/">
+              <img alt="Red Hat" src="https://assets.openshift.net/app/assets/redhat.svg">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-12 text-center">
+            <a href="https://hub.openshift.com/quickstarts/92-do-it-yourself-0-1" title="Powered by OpenShift Online with the DIY Cartridge">
+              <img alt="Powered by OpenShift Online" src="https://www.openshift.com/sites/default/files/images/powered-transparent-white.png">
+            </a>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="social-icons  pull-right">
+                <a href="https://www.facebook.com/events/1025352070912032/" class="fa fa-facebook-square"></a>
+
+
+                <a href="https://twitter.com/openshiftcommon" class="fa fa-twitter-square"></a>
+
+                <!-- END SOCIAL ICONS -->
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+            <p style = "color:#fff;"><small>&copy; 2017 Red Hat All Rights Reserved.</small></p>
+            <p>
+              <small><a href="http://www.redhat.com/en/about/terms-use">http://www.redhat.com/en/about/terms-use</a></small>
+            </p>
+          </div>
+
+
+      </div>
+
+
+
+
+
+</div>
+</div><!-- /.container-fluid -->
+</div><!-- /.pages -->
+
+
+
+
+
+
+<!-- CLOSE MODAL BOX -->
+
+<!-- LOAD JS FILES -->
+
+<!-- Jquery -->
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jquery.cookie.js" type="text/javascript"></script>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jsrender.min.js" type="text/javascript"></script>
+
+<script>
+    $('.btn').on('click', function(){
+        ga('send', 'event', 'button', 'click', 'registration');
+    });
+
+    $('a').on('click', function(){
+                var id= this.id;
+                if (id != null && id != "")
+                    ga('send', 'event', 'session', 'view', id);
+            }
+    );
+</script>
+
+<!-- Less and Twitter Bootstrap -->
+<!-- <script src="../assets/js/less-1.3.3.min.js" type="text/javascript"></script> -->
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Plugins -->
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jquery.equalheight.js" type="text/javascript"></script>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jquery.mixitup.min.js" type="text/javascript"></script>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+<!--<script src="assets/js/plugins/jquery.tweet.min.js" type="text/javascript"></script> -->
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jquery.bxslider.min.js" type="text/javascript"></script>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jquery.responsivevideos.js" type="text/javascript"></script>
+<!--
+<script src="assets/js/plugins/jquery.centralized.js" type="text/javascript"></script>
+-->
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jquery.hashloader.js" type="text/javascript"></script>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jquery.fixedonlater.js" type="text/javascript"></script>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jquery.nav.js" type="text/javascript"></script>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/jquery.scrollTo.js" type="text/javascript"></script>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/waypoints.min.js" type="text/javascript"></script>
+
+<!-- Treble scripts and plugin initialisation -->
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/application.js" type="text/javascript"></script>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/application-devnation.js" type="text/javascript"></script>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/js/application-panelcontrol.js" type="text/javascript"></script>
+
+<script type="text/javascript" language="javascript">
+    $('#navigation').css({'opacity':'1.0','display':'block'});
+
+</script>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://openshiftgathering.com/assets/openshiftgathering/assets/js/html5shiv.js"></script>
+<![endif]-->
+
+
+<div id="oTags">
+    <script type="text/javascript" src="http://openshiftgathering.com/assets/openshiftgathering/js/s_code.js"></script><script type="text/javascript" language="JavaScript" src="http://openshiftgathering.com/assets/openshiftgathering/js/svrGP.aspx"></script>
+    <script type="text/javascript"><!--
+    var coreUrl = encodeURI(document.URL.split("?")[0]).replace(/-/g," ");
+    var urlSplit = coreUrl.toLowerCase().split(/\//);
+    var urlLast = urlSplit[urlSplit.length-1];
+    var pageNameString = "";
+    var siteName = "";
+    var minorSectionIndex = 3
+    if (urlLast == "") {
+        urlSplit.splice(-1,1);
+    }
+    if (urlLast.search(/\./) >= 0) {
+        if (urlLast == "index.html") {
+            urlSplit.splice(-1,1);
+        }
+        else {
+            urlSplit[urlSplit.length-1] = urlLast.split(".").splice(0,1);
+        }
+    }
+    siteName = urlSplit[2].split(".")[1];
+    s.prop14 = s.eVar27 = siteName || "";
+    s.prop15 = s.eVar28 = urlSplit[minorSectionIndex] || "";
+    s.prop16 = s.eVar29 = urlSplit[minorSectionIndex+1] || "";
+    pageNameString = urlSplit.splice(3).join(" | ");
+    s.pageName = "devnation " + siteName + " | " + pageNameString;
+    s.server = "devnation";
+    s.channel = "devnation";
+    s.prop4 = s.eVar23 = encodeURI(document.URL);
+    s.prop21 = s.eVar18 = coreUrl;
+    s.prop2 = s.eVar22 = "en";
+    s.prop3 = s.eVar19 = "us";
+    //-->
+    </script>
+    <script type="text/javascript" src="http://openshiftgathering.com/assets/openshiftgathering/js/rh_omni_footer.js"></script>
+    <script language="JavaScript" type="text/javascript">
+        <!--
+        if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+        //-->
+    </script>
+    <noscript>&lt;a href="http://www.omniture.com" title="Web Analytics"&gt;&lt;img src="https://smtrcs.redhat.com/b/ss/redhatcom,redhatglobal/1/H.25.4--NS/0?[AQB]&amp;cdp=3&amp;[AQE]" height="1" width="1" border="0" alt=""/&gt;&lt;/a&gt;</noscript>
+    <script type="text/javascript">
+        function getUrlVars(){
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for(var i = 0; i < hashes.length; i++)
+            {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+
+
+        var intcmp = getUrlVars()["rh_omni_itc"];
+        if (intcmp == null || intcmp == "")
+            intcmp = $.cookie("rh_omni_itc");
+
+        var sc_cid = getUrlVars()["rh_omni_tc"];
+        if (sc_cid == null || sc_cid == "")
+            sc_cid = $.cookie("rh_omni_tc");
+
+        var pid = getUrlVars()["rh_pid"];
+        if (pid == null || pid == "")
+            pid = $.cookie("rh_pid");
+
+        $("#cover-reg-button").each(function() {
+            var _href = $(this).attr("href");
+            $(this).attr("href", _href + "?intcmp=" + intcmp + "&sc_cid=" + sc_cid + "&pid=" + pid);
+        });
+
+
+        $(document).ready(function(){
+
+
+
+
+            //If we are viewing on desktop, show the nav below the header if we are scrolled at the top,
+            //but if we are scrolled past the header, show the nav fixed to the top of the screen.
+            if( $(window).width() > 950){
+                $(".fixed-top").hide();
+                var oTop = $('#overview').offset().top;
+                var pTop = $('body').scrollTop();
+                if( pTop > oTop ){
+                    //$(".fixed-top").css('display', 'block !important');
+                    $(".fixed-top").show();
+                    $(".middle-nav").hide();
+                }
+                if( pTop < oTop ){
+                    //$(".fixed-top").css('display', 'block !important');
+                    $(".fixed-top").hide();
+                    $(".middle-nav").show();
+                }
+
+                oTop = $('#overview').offset().top;
+                    $(window).scroll(function(){
+
+                        var pTop = $('body').scrollTop();
+                        console.log( pTop + ' - ' + oTop );   //just for your debugging
+                        if( pTop > oTop ){
+                            //$(".fixed-top").css('display', 'block !important');
+                            $(".fixed-top").show();
+                            $(".middle-nav").hide();
+                        }
+                        if( pTop < oTop ){
+                            //$(".fixed-top").css('display', 'block !important');
+                            $(".fixed-top").hide();
+                            $(".middle-nav").show();
+                        }
+                    });
+            }
+
+
+
+            for(x = 1; x < 30; x++){
+                $('#popover' + x).popover();
+            }
+
+
+            $('#popoverOption').popover({ trigger: "hover" });
+
+            $( "#country" ).one('focus', function() {
+                $("#country").val('United States');
+            });
+
+
+
+
+        });
+
+    </script>
+
+
+</div>
+
+
+</body></html>
